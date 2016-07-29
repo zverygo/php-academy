@@ -1,5 +1,6 @@
 <?php
-ehco "HI";
+
+echo date('d m Y');
 
 
 ?>
