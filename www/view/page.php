@@ -19,7 +19,7 @@
             <p>
                 menu
                 <ul>
-                <li>1</li>
+                <li><a href="../index.php?action=1">1</a></li>
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>
@@ -28,9 +28,15 @@
             </p>
         </div>
         <div class="cont">
-            <p>
-                content
-            </p>
+            <?php
+                if($_GET['action']=='main' or !isset($_GET['action'])) {
+                    include "page/main.php";
+                } else if ($_GET['action']==1) {
+                    include "page/1.php";
+                }else {
+                    echo "error";
+                }
+            ?>
         </div>
     </div>
 </div>
