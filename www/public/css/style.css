@@ -1,0 +1,42 @@
+.main {
+    max-width: 1000px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.logo {
+    float: left;
+    width: 180px;
+    height: 100px;
+    padding: 5px;
+    background-image: url("http://placehold.it/190x100");
+}
+
+.head {
+    float: left;
+    width: 780px;
+    height: 100px;
+    padding: 5px;
+}
+
+.block {
+    width: 990px;
+    padding: 5px;
+
+}
+.menu {
+    float: left;
+    width: 180px;
+    padding: 5px;
+}
+
+.cont {
+    float: left;
+    width: 780px;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    clear: left;
+}
