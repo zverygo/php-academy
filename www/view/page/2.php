@@ -1,7 +1,5 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: roman
- * Date: 04.08.2016
- * Time: 20:00
- */
+<h3>Title 2</h3>
+
+<p>
+    2222 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</p>

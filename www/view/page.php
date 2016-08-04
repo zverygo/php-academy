@@ -8,7 +8,7 @@
         </div>
 
         <div class="head">
-            <h2>name site</h2>
+            <h2><a href="../index.php">name site</h2>
             <hr>
             <i>tagline</i>
         </div>
@@ -20,7 +20,7 @@
                 menu
                 <ul>
                 <li><a href="../index.php?action=1">1</a></li>
-                <li>2</li>
+                <li><a href="../index.php?action=2">2</a></li>
                 <li>3</li>
                 <li>4</li>
                 <li>5</li>
@@ -33,7 +33,9 @@
                     include "page/main.php";
                 } else if ($_GET['action']==1) {
                     include "page/1.php";
-                }else {
+                } else if ($_GET['action']==2) {
+                    include "page/2.php";
+                } else {
                     echo "error";
                 }
             ?>
