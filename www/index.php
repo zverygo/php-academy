@@ -1,5 +1,3 @@
 <?php
-ehco "HI";
-
-
+include "view/page.php";
 ?>
