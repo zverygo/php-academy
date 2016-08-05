@@ -8,7 +8,7 @@
         </div>
 
         <div class="head">
-            <h2><a href="../index.php">name site</h2>
+            <h2><a href="../index.php">Name Site</a></h2>
             <hr>
             <i>tagline</i>
         </div>
@@ -29,7 +29,7 @@
         </div>
         <div class="cont">
             <?php
-                if($_GET['action']=='main' or !isset($_GET['action'])) {
+                if(!isset($_GET['action'])) {
                     include "page/main.php";
                 } else if ($_GET['action']==1) {
                     include "page/1.php";
