@@ -18,14 +18,19 @@
         <div class="menu">
             <p>
                 menu
-                <ul>
-                <li><a href="../index.php?action=1">1</a></li>
-                <li><a href="../index.php?action=2">2</a></li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                </ul>
             </p>
+            <ul>
+                <?php for($i=1; $i<3; $i++) : ?>
+                    <li><a href="../index.php?action=<?=$i?>"><?=$i?></a></li>
+                <?php endfor ?>
+                <li>HW</li>
+                    <ul>
+                    <?php for($i=1; $i<2; $i++) : ?>
+                        <li><a href="../index.php?action=hw<?=$i?>">hw<?=$i?></a></li>
+                    <?php endfor ?>
+                    </ul>
+            </ul>
+
         </div>
         <div class="cont">
             <?php
@@ -35,6 +40,8 @@
                     include "page/1.php";
                 } else if ($_GET['action']==2) {
                     include "page/2.php";
+                } else if ($_GET['action']=='hw1') {
+                    include "page/hw/hw1.php";
                 } else {
                     echo "error";
                 }
